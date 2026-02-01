@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Archero Gear Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Archero Gear/Rune Calculator</h1>
+      <p>Calculate crafting requirements for gear and runes</p>
+    </header>
+
+    <main class="card">
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" id="tab-gear">Gear</button>
+        <button class="tab" id="tab-rune">Runes</button>
+      </div>
+
+      <!-- Gear Type Selector (only visible for Gear tab) -->
+      <div class="radio-group" id="gear-type-selector">
+        <label class="radio-label">
+          <input type="radio" name="gear-type" id="gear-regular" checked>
+          Regular Gear
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="gear-type" id="gear-s">
+          S Gear
+        </label>
+      </div>
+
+      <!-- Target Tier Dropdown -->
+      <div class="select-wrapper">
+        <label for="tier-select">Target Tier</label>
+        <select id="tier-select">
+          <!-- Populated by JavaScript -->
+        </select>
+      </div>
+
+      <!-- Results -->
+      <div id="results">
+        <!-- Populated by JavaScript -->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Made for Archero players</p>
+    </footer>
+  </div>
+
+  <script src="js/calculator.js"></script>
+</body>
+</html>
